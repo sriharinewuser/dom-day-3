@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title"> Form</h1>
+<br>
+
+    <form id="form">
+    
+        
+        <table>
+            <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName" placeholder="Enter your Name" required  ></td>
+            </tr>
+
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName" name="lastName" placeholder="Enter your last Name" required ></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address"  name="address" placeholder="Enter your Address" required></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">pincode:</label></td>
+                <td><input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required></td>
+            </tr>
+
+
+
+           
+
+            
+            <tr>
+                   <td> <label for="gender">Gender:</label> </td>
+    
+                   <td> <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                   </td>
+            </tr>
+            
+        <tr>
+            <tr>
+                <td><label>Choice of Food:</label></td>
+                <td>
+                    <input type="checkbox" name="food" value="pizza"> Pizza<br>
+                    <input type="checkbox" name="food" value="burger"> Burger<br>
+                    <input type="checkbox" name="food" value="Briyani">Briyani<br>
+                    <input type="checkbox" name="food" value="pasta"> Pasta<br>
+                    <input type="checkbox" name="food" value="salad"> Salad<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" placeholder="Enter your State"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" name="country" placeholder="Enter your Country "></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" onclick="submitForm()">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    <table id="dataTable" class="data-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pin Code</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    
+    
+
+
+         <script src="/script.js"></script>
+         <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>                
+</body>
+</html>
